@@ -1,4 +1,5 @@
 
+
 # falcon-motor
 This project contains the motor part of a drone and some contents of wireless control.
 
@@ -55,6 +56,11 @@ JV:enabled[1]                           //enable channel verification(set as rou
 
 process:
 
-1.I use a potentiometer to control the speed of motor. But serial.write() only transmit string values and transform string to int could be hard so I decide to use bottons to change speed when bottons are pressed.
+1.The motor was tested on a 5v DC power source. It is hard to decide which battery to use because I do not know how many power the power source need to supply in order to lift the drone and I also to make sure the current is not too big which will burn the motor.
 
-2.at the beginning I send the data from coordinate to router which creates the lag for about 10s, since the mode is broadcast mode. Then I decide to send the values from router which almost has 0 lag.
+2.I use a potentiometer to control the speed of motor. But serial.write() only transmit string values and transform string to int could be hard so I decide to use bottons to change speed when bottons are pressed.
+
+3.at the beginning I send the data from coordinate to router which creates the lag for about 10s, since the mode is broadcast mode. Then I decide to send the values from router which almost has 0 lag.
+
+
+Han Li

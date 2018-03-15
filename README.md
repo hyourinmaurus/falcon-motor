@@ -13,4 +13,5 @@ Software:
 XCTU
 arduino
 
-wire for the motor
+wire for the motor(see attach)
+wire for the controller(see attach)
